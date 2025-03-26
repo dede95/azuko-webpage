@@ -1,0 +1,1050 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    font-size: 20px;
+    background-color: #FEFAF6;
+    margin: 0 auto;
+}
+
+h1, h2, h3, .figures {
+    font-family: "Bebas Neue", Oswald, sans-serif;
+    color: #383838;
+}
+
+h1, .figures {
+    font-size: 3.75rem;
+}
+
+h2 {
+    font-size: 3rem;
+    padding: 8px 16px 8px 0;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p, .quotes {
+    font-family: "Helvetica Neue", sans-serif;
+    color: #383838;
+    margin: 0;
+}
+
+p {
+    font-weight: 400;
+}
+
+.quotes {
+    font-size: 2.5rem;
+}
+
+.body-heading {
+    font-size: 1.5rem;
+}
+
+.body-text {
+    font-family: "HelveticaNeue-Light", sans-serif;
+    font-size: 1.25rem;
+    /* font-weight: 200; */
+}
+
+.general-section-padding {
+    /* padding-left: 135px; */
+    padding: 5em 0;
+}
+
+.container-width {
+    width: 82%;
+    margin: 0 auto;
+}
+
+/* .general-section-right-bottom {
+    padding-right: 135px;
+    padding-bottom: 80px;
+} */
+
+/* Nav bar */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 64px; */
+    padding: 0.625em 0;
+
+
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 44px;
+}
+
+.logo img {
+    width: 45px;
+}
+
+.nav-links-small {
+    display: none;
+    visibility: hidden; 
+}
+
+.nav-links {
+    /* border: 1px solid black; */
+    justify-self: flex-end;
+    /* height: 56px; */
+    display: flex;
+    align-items: center;
+    margin-right: 3em;
+}
+
+.nav-links a, .nav-links-small a {
+    padding: 8px;
+    margin: 0 28px;
+    text-decoration: none;
+    color: #383838;
+}
+
+.nav-links a:hover, .nav-links-small a:hover {
+    color: #901CCA;
+    cursor: pointer;
+}
+
+.nav-links a:first-child {
+    margin-left: 0;
+}
+
+.nav-links a:last-child {
+    margin-right: 0;
+}
+
+.donate-button {
+    font-family: "Helvetica Neue" sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 12px 27px;
+    border-radius: 5px;
+    color: #FEFAF6;
+    background-color: #901CCA;
+    border: none;
+    cursor: pointer;
+
+    transition: background-color 100ms ease-in;
+}
+
+.donate-button:hover {
+    background-color: #601387;
+}
+
+.nav-donate {
+    margin-right: 32px;
+}
+
+/* HERO SECTION */
+.hero-section {
+    background-color: aliceblue;
+    background-image: url('./images/theodore-goutas-aeq3jJj0sUw-unsplash.jpg');
+    background-size: cover;
+    background-position: left;
+    height: 720px;
+}
+
+/* Intro area to be relatively set and cards within absolute */
+.box-card-area {
+    position: relative;
+}
+
+.box-card-area-hero {
+    width: 382px;
+    height: 424px;
+    top: 18.9%;
+    left: 9.72%;
+}
+
+.intro-box-area, .intro-box-offset {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.intro-box-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FEFAF6;
+    border: 0.5px solid black;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.intro-box-offset {
+    position: absolute;
+    top: 22px;
+    right: 24px;
+    background-color: #30700F;
+    z-index: 0;
+
+    transition: top 400ms, right 400ms 
+}
+
+.box-card-area:hover .intro-box-offset {
+    top: 4px;
+    right: 3px;
+    transition-timing-function: ease-in-out;
+}
+
+.box-card-area {
+    position: relative;
+}
+
+.donate-hero-card {
+    padding: 22px;
+    
+}
+
+.donate-hero-card h1 {
+    line-height: 72px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.donate-hero-card p {
+    font-weight: 400;
+}
+
+/* INTRO / FACT AREA */
+
+.azuko-intro {
+    text-align: center;
+    width: 82%;
+    margin: 0 auto;
+}
+
+.intro-fact {
+    width: 80%;
+    text-align: center;
+    font-weight: 700;
+    background-color: #30700F;
+    margin: 80px auto 40px;
+    padding: 40px 134px;
+
+}
+
+.intro-fact p {
+    color: #FEFAF6;
+}
+
+/* MISSION AREA */
+
+/* .mission-area {
+    display: flex;
+} */
+
+.container-mission {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mission-left-side {
+    width:40%;
+}
+
+.mission-left-side > p {
+    padding: 8px 16px 8px 0;
+    margin-top: 40px;
+    font-weight: 400;
+}
+
+.mission-left-side .body-text {
+    padding: 8px 16px 8px 0;
+    margin-top: 28px;
+}
+
+.fact-circles {
+    display: flex;
+    gap: 28px;
+    margin-top: 24px;
+}
+
+.fact-circles .fact {
+    background-color: #6E9954;
+    border: #30700F 3px solid;
+    height: 172px;
+    width: 172px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border-radius: 50%;
+    /* margin-right: 28px; */
+    text-align: center;
+    color: #FEFAF6;
+    padding: 8px;
+    font-weight: 600;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fact-circles .fact:last-child {
+    margin-right: 0;
+}
+
+/*  */
+.mission-right-side {
+    display:flex;
+    flex-direction: column;
+    width:40%;
+}
+
+.button-mission {
+    align-self: center;
+    margin-top: 55px;
+    padding: 12px 20px;
+    width: 200px;
+}
+
+.mission-box-cards {
+    position: relative;
+    width: 100%;
+    
+    height: 368px;
+    margin-top: 216px;
+    
+}
+
+.pic-mission-card {
+    position: absolute;
+    
+    border-radius: 5px;
+    background-image: url(./images/A+sense+of+place.jpeg);
+    background-size: cover;
+
+    width: 63.6%;
+    height: 92.4%;
+    left: 17.6%;
+    z-index: 1;
+}
+
+.pic-mission-card-offset {
+    position: absolute;
+    background-color: #30700F;
+    border-radius: 5px;
+    width: 63.6%;
+    height: 92.4%;
+    top: 7.6%; /* (28px/368px) - since we want 28px in terms of % to the height set  */
+    left: 21.5%; /* (28px/720px) + 17.6% rel to the top card - since we want 28px in terms of % to the width set  */
+    z-index: 0;
+}
+
+/* WHERE WE OPERATE */
+
+.where-section > h2 {
+    margin-top: 25px;
+    margin-bottom: 40px;
+
+}
+
+.where-maps {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.where-maps div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.where-maps img {
+    width: 50%;
+}
+
+/* IMPACT SECTION */
+
+.impact-section {
+    border: #30700F solid 10px;
+}
+
+.impact-facts {
+    display: flex;
+    gap: 42px;
+    justify-content: space-evenly;
+}
+
+.fact-circle-section {
+    display: flex;
+    flex-direction: column;
+    width: 284px;
+    align-items: center;
+
+    position: relative;
+}
+
+.fact-circle-section h3 {
+    color: #FEFAF6;
+}
+
+.fact-circle-section p {
+    text-align: center;
+    /* font-weight: 500 */
+}
+
+.purple-circle {
+    position: absolute;
+    border: #901CCA 3px solid;
+    background-color: rgba(144, 28, 202, 0.7);
+    height: 84px;
+    width: 84px;
+    border-radius: 50%;
+    top: 110px;
+    left: 50px;
+}
+
+/* HOW WE HELP SECTION */
+
+.container-help .fact-circles {
+    margin: 40px 0;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.help-circles .help-fact {
+    /* enlarge "help" circles */
+    width: 250px;
+    height: 250px;
+    font-size: 1.25em;
+}
+
+ /* HOW WE HELP section */
+
+.areas-of-help {
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-top: 40px;
+}
+
+.left-column, .right-column {
+    display: flex;
+    flex-direction: column;
+    width: 368px;
+}
+
+.cell {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid green; */
+}
+
+.help-box-cards{
+    position: relative;
+    width: 100%;
+    height: 276px;
+}
+
+.pic-help-card, .pic-help-card-offset {
+    position: absolute;
+    width: 92.4%;
+    height: 248px;
+
+    border-radius: 5px;
+}
+
+.pic-help-card {
+    border: 1px solid black;
+    z-index: 1;
+}
+
+.pic-help-card-offset {
+    background-color: #30700F;
+    top: 7.6%;
+    left: 7.6%;
+    z-index: 0;
+}
+
+.cell-1 .pic-help-card {
+    background-image: url('./images/theodore-goutas-aeq3jJj0sUw-unsplash.jpg');
+    background-size: cover;
+    background-position: left;
+}
+
+/* .cell-3 .pic-help-card {
+    background-image: url('./images/London+Fields.jpeg');
+    background-size: cover;
+    background-position: left;
+} */
+
+.cell-4 .pic-help-card {
+    background-image: url('./images/Artist,+Alex+Julyan.jpeg');
+    background-size: cover;
+    background-position: left;
+}
+
+.cell-2 .pic-help-card {
+    background-image: url('./images/London+Fields.jpeg');
+    background-size: cover;
+    background-position: left;
+}
+
+/* CAROUSEL SECTION */
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-pics {
+    position: relative;
+    width: 826px;
+    height: 466px;
+}
+
+.pic-carousel, .pic-carousel-offset {
+    position: absolute;
+    width: 96.6%;
+    height: 94%;
+
+    border-radius: 5px;
+}
+
+.pic-carousel {
+    border: 1px solid black;
+    z-index: 1;
+
+    background-image: url('./images/Build+for+safety-2.jpeg');
+    background-size: cover;
+    background-position: left;
+}
+
+.pic-carousel-offset {
+    background-color: #30700F;
+
+    top: 3.4%;
+    left: 3.4%;
+    z-index: 0;
+}
+
+#buttons{
+    display: flex;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+#buttons div {
+    width: 20px;
+    height: 20px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+}
+
+#buttons div:first-child {
+    background-color: #383838;
+}
+
+/* FUNDS SECTION*/
+
+.container-funds > p {
+    margin: 80px 0;
+}
+
+.portion-bars {
+    display: flex;
+}
+
+.portion-bar-1, .portion-bar-2 {
+    height: 60px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portion-bars span {
+    font-weight: 600;
+    color: #FEFAF6;
+    font-size: 2rem;
+    
+}
+
+.portion-bar-1 {
+    background-color: #30700F;
+    flex-grow: 2;
+}
+
+.portion-bar-2 {
+    background-color: #901CCA;
+    flex-grow: 1;
+}
+
+
+/* APPEALS SECTION */
+
+.appeals-container blockquote {
+   width: 100%;
+}
+
+.appeals-container blockquote h2 {
+    margin: 0 0 28px 0;
+    color: #FEFAF6;
+}
+
+.appeals-container blockquote p {
+    font-size: 1.5rem;
+}
+
+.appeals-container blockquote .button-appeal {
+    margin-top: 28px;
+    border: 5px solid #FEFAF6;
+}
+
+/* MORE SECTION */
+
+.more-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.more-box-cards {
+    position: relative;
+    height: 368px;
+    width: 486px;
+}
+
+.pic-more-card, .pic-more-card-offset {
+    position: absolute;
+    width: 94%;
+    height: 92%;
+    border-radius: 5px;
+}
+
+.overlay-text-more {
+    position: absolute;
+    top: 39%;
+    left: 25%;
+    background-color: rgba(254, 250, 246, 90);
+    z-index: 2;
+    padding: 0.5em 1em;
+    
+}
+
+.overlay-text-more > h2 {
+    margin: 0;
+    padding: 0;
+}
+
+
+.pic-more-card {
+    border: solid 1px black;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.pic-more-card-offset {
+    background-color: #30700F;
+    z-index: 0;
+    top: 7%;
+    left: 6%;
+
+    transition: top 400ms, left 400ms;
+}
+
+.more-box-cards:hover > .pic-more-card-offset {
+    top: 0;
+    left: 0;
+    transition-timing-function: ease-in-out;
+}
+
+/* END POVERTY SECTION */
+
+.end-poverty-section {
+    border: solid 5px #901CCA;
+}
+
+.end-poverty-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.end-poverty-container .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.end-poverty-container .right {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+
+    margin-right: 78px;
+}
+/* TODO: change poinyrtstyle over buttons */
+
+/*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+/* For smaller screen */
+@media (max-width: 1074px){
+
+    header{
+        justify-content: space-between;
+    }
+
+    .nav-bar {
+        display: block;
+        /* justify-content: flex-end; */
+        align-items: center;
+    }
+
+    .nav-links {
+        display: none;
+        visibility: hidden;
+    }
+    .nav-links-small {
+        display: block;
+        visibility: visible;
+    }
+
+    /* MISSION AREA */
+    /* .mission-area {
+        display: block;
+    } */
+
+    .general-section-padding {
+        padding: 20px 0;
+    }
+    .container-mission {
+        flex-direction: column;
+    }
+
+    .mission-left-side, .mission-right-side {
+        width: 100%;
+        margin: 0 auto;
+        /* padding: 80px 40px; */
+        text-align: center;
+
+        justify-content: center;
+    }
+    .mission-left-side .body-heading, .mission-left-side .body-text {
+        padding-right: 0;
+    }
+
+    .mission-left-side > h2 {
+        padding: 1em 1.25em;
+    }
+
+    .fact-circles {
+        justify-content: center;
+    }
+
+    .mission-box-card-area {
+        margin-top: 0;
+    }
+
+    /* where section */
+
+    .container-where > h2 {
+        /* padding: 1em 1.25em; */
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    .where-maps {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-shrink: 0.5;
+    }
+
+    /* facts section */
+
+    .impact-section {
+        padding: 1em 0;
+
+        text-align: center;
+    }
+    .impact-facts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* how we help section */
+
+    .container-help > h2 {
+        /* padding: 1em 1.25em; */
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    .container-help {
+        text-align: center;
+    }
+
+    .fact-circles {
+        margin-top: 40px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .help-circles {
+        margin-bottom: 40px;
+    }
+
+    .help-circles .help-fact {
+        /* enlarge "help" circles */
+        width: 173px;
+        height: 173px;
+        font-size: 1em;
+    }
+
+    .cell {
+        align-items: center;
+    }
+
+    .areas-of-help {
+        flex-direction: column;
+        align-items: center;
+        
+        text-align: center;
+    }
+
+
+    .working-on-container > h2 {
+        /* padding: 1em 1.25em; */
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    .carousel-pics {
+        width: 80%;
+        height: 300px;
+    }
+
+    /* Appeals section */
+
+    .container-funds > h2 {
+        /* padding: 1em 1.25em; */
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    .container-funds .quotes {
+        margin-top: 40px;
+        font-size: 1.5rem;
+    }
+
+    /* appeals section */
+    .appeals-container > h2 {
+        /* padding: 1em 1.25em; */
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    .appeals-container blockquote {
+        margin-top: 0;
+    }
+
+    /* MORE SECTION */
+    .more-container {
+        /* flex-direction: column; */
+        align-items: center;
+        gap: 32px;
+        width: 80%;
+    }
+
+    /* end poverty section */
+
+    .end-poverty-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .end-poverty-container .left > h2 {
+        /* padding: 1em 1.25em; */
+        padding: 1em 0;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .end-poverty-container .left, .end-poverty-container .right {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .end-poverty-container .right button {
+        margin-top: 28px;
+    }
+
+
+    
+}
+
+
+/* FOR MOBILE */
+@media (max-width: 768px){
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .general-section-padding {
+        padding-top: 0;
+    }
+
+    .logo {
+        margin-left: 0;
+        padding: 16px 0;
+    }
+
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    } 
+
+    .nav-links-small {
+        display: none;
+        visibility: hidden;
+    }
+
+    .nav-links {
+        display: block;
+        visibility: visible;
+        margin: 0;
+        margin-bottom: 16px;
+    }
+
+    .nav-links a {
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav-donate {
+        margin-bottom: 16px;
+        margin-right: 0; 
+        flex-grow: 1;
+    }
+
+    .box-card-area {
+        position: relative;
+        width: 241px;
+        height: 267.5px;
+        top: 30%;
+        left: 32%;
+    }
+
+    h1, h2, h3 {
+        font-family: "Bebas Neue", Oswald, sans-serif;
+        font-size: 2rem;
+        color: #383838;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .donate-hero-card h1 {
+        line-height: 1;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    .donate-hero-card p {
+        font-size: 1rem;
+    }
+
+    .hero-section {
+        width: 100%;
+        background-position: bottom;
+    }
+
+    /* INTRO / FACT AREA */
+
+    .azuko-intro {
+        font-size: 1.2rem;
+    }
+    .intro-fact {
+        font-size: 1.5rem;
+        padding: 1em 1.25em;
+    }
+
+
+    /* MISSION AREA */
+    .fact-circles {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 28px;
+    }
+
+    .fact-circles div {
+        margin-right: 0;
+        margin-bottom: 28px;
+    }
+
+    .fact-circles div:last-child {
+        margin-bottom: 0;
+    }
+
+    .mission-right-side {
+        padding-top: 0;
+    }
+
+    /* WHERE SECTION */
+    .where-section {
+        padding-top: 0;
+    }
+
+    /* HOW WE HELP SECTION */
+
+    .areas-of-help .box-card-area {
+        left: 0%;
+        width: 80%;
+    }
+
+    /* CAROUSEL SECTION */
+
+    .carousel-pics {
+        width: 90%;
+        height: 220px;
+    }
+
+    /*  more section */
+    
+
+}
