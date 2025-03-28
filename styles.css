@@ -487,6 +487,13 @@ header {
     top: 7.6%;
     left: 7.6%;
     z-index: 0;
+    transition: top 400ms, left 400ms;
+}
+
+.help-box-cards:hover .pic-help-card-offset {
+    top: 0;
+    left: 0;
+    transition-timing-function: ease-in-out;
 }
 
 .cell-1 .pic-help-card {
@@ -1066,6 +1073,19 @@ header {
     .areas-of-help .box-card-area {
         left: 0%;
         width: 80%;
+    }
+
+    .text-on-hover {
+        opacity: 1;
+        visibility: visible;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-on-hover p {
+        color: #FEFAF6;
     }
 
     /* CAROUSEL SECTION */
