@@ -35,7 +35,7 @@ p, .quotes {
 }
 
 p {
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .quotes {
@@ -456,12 +456,25 @@ header {
     height: 276px;
 }
 
-.pic-help-card, .pic-help-card-offset {
+.pic-help-card, .pic-help-card-offset, .text-on-hover {
     position: absolute;
     width: 92.4%;
     height: 248px;
 
     border-radius: 5px;
+}
+
+.text-on-hover {
+    opacity: 0;
+    visibility: hidden;
+    padding-right: 20px;
+    padding-left: 30px;
+
+    background-color: rgba(56, 56, 56, 0.55);
+    color: #FEFAF6;
+    z-index: 2;
+
+    transition: opacity 300ms, visibility 300ms, color 300ms;
 }
 
 .pic-help-card {
@@ -498,6 +511,23 @@ header {
     background-image: url('./images/London+Fields.jpeg');
     background-size: cover;
     background-position: left;
+}
+
+.help-box-cards:hover .text-on-hover {
+    opacity: 1;
+    visibility: visible;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition-timing-function: ease-in-out;
+}
+
+.help-box-cards:hover .text-on-hover p {
+    color: #FEFAF6;
+
+    transition-timing-function: ease-in-out;
 }
 
 /* CAROUSEL SECTION */
@@ -656,6 +686,7 @@ header {
     z-index: 1;
     top: 0;
     left: 0;
+    cursor: pointer;
 }
 
 .pic-more-card-offset {
