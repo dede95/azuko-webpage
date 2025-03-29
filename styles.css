@@ -796,6 +796,19 @@ footer {
     background-color: #383838;
 }
 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left-side {
+    width: 45%;
+}
+
+.footer-right-side {
+    width: 35%;
+}
+
 footer p, footer a, footer label {
     color: #FEFAF6;
 }
@@ -805,24 +818,24 @@ footer .body-heading {
 }
 
 .footer-container {
-    border: #FEFAF6 solid 1px;
+    /* border: #FEFAF6 solid 1px; */
     color: #FEFAF6;
 }
 
 .footer-links {
     display: flex;
     margin-bottom: 72px;
+    gap: 42px;
 }
 
 .footer-links a {
-    margin-right: 42px;
     font-weight: 400;
 }
 
-footer form {
+footer .newsletter {
     display: flex;
     flex-direction: column;
-    
+    margin-bottom: 42px;
 }
 
 #submission {
@@ -830,19 +843,58 @@ footer form {
     align-items: center;
 }
 
-footer form input {
-    width: 30%;
+footer .newsletter input {
+    width: 70%;
     height: 48px;
 }
 
-footer form .donate-button {
+footer .newsletter #form-title {
+    margin-bottom: 8px;
+}
+
+footer .newsletter input::placeholder {
+    padding-left: 16px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+footer .newsletter .donate-button {
     margin-left: 16px;
     background-color: #FEFAF6;
     color: #383838;
     border: #901CCA 5px solid;
+    font-weight: 500;
 }
 
+#charity-info {
+    margin-bottom: 12px;
+}
 
+#t-and-cs {
+    display: flex;
+    gap: 32px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+    gap: 32px;
+}
+
+.icons img {
+    width: 36px;
+    height: 36px;
+}
+
+.latest-tweet > p {
+    margin-bottom: 48px;
+    padding-right: 4px;
+}
+
+.latest-tweet p {
+    text-align: center;
+    width: 100%;
+}
 
 /*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
 /* For smaller screen */
@@ -1008,8 +1060,6 @@ footer form .donate-button {
         justify-content: center;
         align-items: center;
         text-align: center;
-
-        width: ;
     }
 
     /* appeals section */
@@ -1058,7 +1108,51 @@ footer form .donate-button {
         margin-top: 28px;
     }
 
+    /* FOOTER */
 
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left-side {
+        margin-bottom: 32px;
+        width: 80%;
+    }    
+
+    .footer-right-side {
+        width: 80%;
+    }
+
+    .footer-links, #t-and-cs, .icons {
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+
+    #submission {
+        flex-direction: column;
+    }
+
+    footer .newsletter input {
+        width: 70%;
+        height: 48px;
+    }
+
+    footer .newsletter .donate-button {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+    #t-and-cs {
+        display: flex;
+        gap: 24px;
+    }
+
+    .latest-tweet > p {
+        padding-right: 0;
+    }
     
 }
 
@@ -1245,5 +1339,36 @@ footer form .donate-button {
         margin-bottom: 20px;
     }
     
+    /* FOOTER  */
+
+    .footer-links {
+        justify-content: center;
+        font-size: 18px;
+        margin-top: 16PX;
+    }
+    
+
+    #submission {
+        flex-direction: column;
+    }
+
+    footer .newsletter input {
+        width: 100%;
+        height: 48px;
+    }
+
+    footer .newsletter .donate-button {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+    #t-and-cs {
+        display: flex;
+        gap: 24px;
+    }
+
+    .latest-tweet > p {
+        padding-right: 0;
+    }
 
 }
