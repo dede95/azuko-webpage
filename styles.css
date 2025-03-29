@@ -789,7 +789,60 @@ header {
 
     margin-right: 78px;
 }
-/* TODO: change poinyrtstyle over buttons */
+
+/* FOOTER SECTION */
+
+footer {
+    background-color: #383838;
+}
+
+footer p, footer a, footer label {
+    color: #FEFAF6;
+}
+
+footer .body-heading {
+    font-weight: 400;
+}
+
+.footer-container {
+    border: #FEFAF6 solid 1px;
+    color: #FEFAF6;
+}
+
+.footer-links {
+    display: flex;
+    margin-bottom: 72px;
+}
+
+.footer-links a {
+    margin-right: 42px;
+    font-weight: 400;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#submission {
+    display: flex;
+    align-items: center;
+}
+
+footer form input {
+    width: 30%;
+    height: 48px;
+}
+
+footer form .donate-button {
+    margin-left: 16px;
+    background-color: #FEFAF6;
+    color: #383838;
+    border: #901CCA 5px solid;
+}
+
+
 
 /*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
 /* For smaller screen */
@@ -1185,6 +1238,11 @@ header {
     .funds-mobile .tooltip-1, .funds-mobile .tooltip-2 {
         position: relative;
         top: 0px;
+    }
+
+    .container-funds p.quotes {
+        text-align: center;
+        margin-bottom: 20px;
     }
     
 
