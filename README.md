@@ -1,6 +1,6 @@
 # AzuKo Web Homepage Project
 
-This repo contains the source code for a design for AzuKo's web homepage, built using HTML and CSS. The design for this project was created in Figma and is being developed into a functional prototype.
+This repo contains the source code for a proposed homepage design, presented to client AzuKo. This is built using HTML and CSS. The design for this project was created in Figma and is being developed into a functional prototype.
 
 If you would like to read more about the design process, please [visit here](https://adeolao.carrd.co/#project-azuko).
 
