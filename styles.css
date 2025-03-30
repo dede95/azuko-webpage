@@ -329,8 +329,9 @@ header {
     position: absolute;
     
     border-radius: 5px;
-    background-image: url(./images/A+sense+of+place.jpeg);
+    background-image: url('./images/alexis-brown-omeaHbEFlN4-unsplash.jpg');
     background-size: cover;
+    background-position: center;
 
     width: 63.6%;
     height: 92.4%;
@@ -497,25 +498,25 @@ header {
 }
 
 .cell-1 .pic-help-card {
-    background-image: url('./images/theodore-goutas-aeq3jJj0sUw-unsplash.jpg');
+    background-image: url('./images/kabiur-rahman-riyad-nmmjZzXjCYc-unsplash.jpg');
     background-size: cover;
     background-position: left;
 }
 
-/* .cell-3 .pic-help-card {
-    background-image: url('./images/London+Fields.jpeg');
+.cell-3 .pic-help-card {
+    background-image: url('./images/neerob-raihan-3YxzN-I_jOk-unsplash.jpg');
     background-size: cover;
     background-position: left;
-} */
+}
 
 .cell-4 .pic-help-card {
-    background-image: url('./images/Artist,+Alex+Julyan.jpeg');
+    background-image: url('./images/surface-2T-B5o8ckXc-unsplash.jpg');
     background-size: cover;
     background-position: left;
 }
 
 .cell-2 .pic-help-card {
-    background-image: url('./images/London+Fields.jpeg');
+    background-image: url('./images/robert-bye-4hcpIbqQM8c-unsplash.jpg');
     background-size: cover;
     background-position: left;
 }
@@ -564,7 +565,7 @@ header {
     border: 1px solid black;
     z-index: 1;
 
-    background-image: url('./images/Build+for+safety-2.jpeg');
+    background-image: url('./images/vonecia-carswell-0aMMMUjiiEQ-unsplash.jpg');
     background-size: cover;
     background-position: left;
 }
@@ -760,6 +761,18 @@ header {
     top: 0;
     left: 0;
     transition-timing-function: ease-in-out;
+}
+
+.more-container div:nth-child(1) .pic-more-card{
+    background-image: url('./images/adrien-taylor-2b4MrHyPqp0-unsplash.jpg');
+    background-size: cover;
+    background-position: left;
+}
+
+.more-container div:nth-child(2) .pic-more-card{
+    background-image: url('./images/hasnan-monir-7JRlvjYK0m0-unsplash.jpg');
+    background-size: cover;
+    background-position: left;
 }
 
 /* END POVERTY SECTION */
