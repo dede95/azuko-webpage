@@ -2,7 +2,7 @@
 
 This repo contains the source code for a proposed homepage design, presented to client AzuKo. This is built using HTML and CSS. The design for this project was created in Figma and is being developed into a functional prototype.
 
-The homepage protoype: [link](https://dede95.github.io/azuko-webpage/)
+**The homepage protoype**: [link](https://dede95.github.io/azuko-webpage/)
 
 If you would like to read more about the design process, please [visit here](https://adeolao.carrd.co/#project-azuko).
 
